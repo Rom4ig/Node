@@ -1,0 +1,15 @@
+{
+  "name": "lab18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rom4ik",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^5.21.4",
+    "tedious": "^8.0.1"
+  }
+}

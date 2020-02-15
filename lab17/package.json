@@ -1,0 +1,16 @@
+{
+  "name": "lab17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "17-01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "log4js": "^6.1.1",
+    "nodemon": "^2.0.2",
+    "redis": "^2.8.0"
+  }
+}
