@@ -1,9 +1,9 @@
 const Sequelize = require("sequelize");
-module.exports = new Sequelize("labSequelize", "sa", "kTlTyTw@2014", {
+module.exports = new Sequelize("databasenane", "user", "password", {
     dialect: "mssql",
     host: "localhost",
     define: {
         timestamps: false
     },
-    port: 61792
+    port: port
 });
