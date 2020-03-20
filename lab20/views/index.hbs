@@ -1,0 +1,19 @@
+{{!-- index --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <base href="/">
+    <title>Lab20</title>
+</head>
+<body>
+<form>
+    <h1 style="text-align: center">
+        {{#each names}}
+            <div>{{name}}-{{phone}}</div>
+        {{/each}}
+    </h1>
+</form>
+</body>
+</html>
