@@ -13,4 +13,6 @@ const mycontrollers = new (require('./MVC')).MVCControllers({
 });
 const mvc = new (require('./MVC')).MVC(myrouter, mycontrollers);
 app.get(mvc.router.uri_templates, mvc.use);
+app.post(mvc.router.uri_templates, mvc.use);
+
 app.listen(3000);
