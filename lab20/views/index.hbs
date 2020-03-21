@@ -6,14 +6,33 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <base href="/">
     <title>Lab20</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
 <body>
 <form>
-    <h1 style="text-align: center">
-        {{#each names}}
-            <div>{{name}}-{{phone}}</div>
-        {{/each}}
-    </h1>
+    <div style="text-align: center">
+        {{#if disabled}}
+            {{#each names}}
+                <div class="button-container">
+                    <a class="disabled">{{name}}  -  {{phone}}</a>
+                </div>
+            {{/each}}
+        {{else}}
+            {{#each names}}
+                <div class="button-container">
+                    <a href="/update?id={{id}}">{{name}}  -  {{phone}}</a>
+                </div>
+            {{/each}}
+            <a href="/add">Добавить</a>
+        {{/if}}
+        {{#if add}}
+            {{>add}}
+        {{/if}}
+        {{#if update}}
+            {{>update}}
+        {{/if}}
+    </div>
 </form>
 </body>
 </html>
