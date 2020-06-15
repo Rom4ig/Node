@@ -1,0 +1,10 @@
+{
+  "server": {
+    "port": 8000
+  },
+  "bot": {
+    "apiUrl": "https://api.telegram.org/bot",
+    "token": "1207168805:AAGbUWWD-KQwrxCT6B0zFR4Lvf_x7ZeQ8J0",
+    "defaultChatId": 390170412
+  }
+}
